@@ -46,7 +46,7 @@ nav a:hover { color:#0066cc; }
 /* CONTACT */
 .contact { padding:100px 50px; text-align:center; background-color:#cce6ff; }
 .contact h2 { color:#3399ff; font-size:2rem; margin-bottom:30px; }
-.contact-container { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
+.contact-container { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; padding: 0 10px; margin:0 auto; }
 .contact-card { background:#ffffff; padding:20px; border-radius:15px; width:200px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
 .contact-name { font-weight:bold; margin-bottom:5px; color:#3399ff; }
 .contact-link { color:#087bed; text-decoration:none; font-size:0.95rem; word-break:break-word; }
@@ -137,3 +137,4 @@ header {
     right: 0;
   }
 }
+
