@@ -2,13 +2,13 @@
 html { scroll-behavior: smooth; }
 body { background-color:#e6f2ff; color:#2e2e2e; line-height:1.6; }
 
-/* HEADER */
+
 header { display:flex; justify-content:space-between; align-items:center; padding:20px 50px; position:fixed; width:100%; background:rgba(255,255,255,0.95); box-shadow:0 2px 8px rgba(0,0,0,0.1); z-index:1000; }
 .logo { font-size:1.8rem; font-weight:bold; color:#3399ff; }
 nav a { margin-left:30px; text-decoration:none; color:#2e2e2e; font-weight:600; transition:0.3s; }
 nav a:hover { color:#0066cc; }
 
-/* HERO */
+
 .hero { height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; background:linear-gradient(135deg,#cce6ff,#e6f2ff); padding:0 20px; }
 .hero-photo { width:250px; height:250px; border-radius:50%; margin-bottom:20px; border:4px solid #3399ff; }
 .hero h1 { font-size:2.5rem; margin-bottom:10px; }
@@ -20,19 +20,18 @@ nav a:hover { color:#0066cc; }
 .resume-btn { background-color:transparent; color:#3399ff; border:2px solid #3399ff; }
 .resume-btn:hover { background-color:#3399ff; color:#fff; }
 
-/* ABOUT */
 .about { padding:100px 50px; text-align:center; background-color:#ffffff; }
 .about h2 { color:#3399ff; font-size:2rem; margin-bottom:20px; }
 .about p { max-width:700px; margin:0 auto; font-size:1.1rem; color:#555; }
 
-/* SKILLS */
+
 .skills { padding:100px 50px; text-align:center; background-color:#e6f2ff; }
 .skills h2 { color:#3399ff; font-size:2rem; margin-bottom:30px; }
 .skills-container { display:flex; justify-content:center; flex-wrap:wrap; gap:15px; }
 .skill-box { background:#ffffff; padding:12px 20px; border-radius:30px; box-shadow:0 4px 10px rgba(0,0,0,0.1); font-weight:600; color:#3399ff; transition:0.3s; }
 .skill-box:hover { transform:translateY(-5px); background-color:#3399ff; color:#fff; }
 
-/* PROJECTS */
+
 .projects { padding:100px 50px; text-align:center; background-color:#ffffff; }
 .projects h2 { color:#3399ff; font-size:2rem; margin-bottom:30px; }
 .projects-container { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
@@ -43,7 +42,7 @@ nav a:hover { color:#0066cc; }
 .project-btn { text-decoration:none; color:#fff; background-color:#3399ff; padding:8px 15px; border-radius:20px; }
 .project-btn:hover { background-color:#0066cc; }
 
-/* CONTACT */
+
 .contact { padding:100px 50px; text-align:center; background-color:#cce6ff; }
 .contact h2 { color:#3399ff; font-size:2rem; margin-bottom:30px; }
 .contact-container { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; padding: 0 10px; margin:0 auto; }
@@ -52,10 +51,10 @@ nav a:hover { color:#0066cc; }
 .contact-link { color:#087bed; text-decoration:none; font-size:0.95rem; word-break:break-word; }
 .contact-link:hover { text-decoration:underline; color:#0066cc; }
 
-/* FOOTER */
+
 footer { background-color:#2e2e2e; color:#ffffff; text-align:center; padding:20px; }
 
-/* RESPONSIVE */
+
 @media(max-width:768px){
   header { flex-direction:column; align-items:flex-start; }
   nav { margin-top:10px; }
@@ -64,55 +63,63 @@ footer { background-color:#2e2e2e; color:#ffffff; text-align:center; padding:20p
   .hero-photo { width:120px; height:120px; }
 }
 
+@media (max-width: 768px) {
+  .project-card {
+    width: 90%;          
+    max-width: 300px;   
+    margin: 10px auto;   
+  }
+}
+
 
 
 #menu-toggle {
   display: none;
 }
 
-/* Header layout */
+
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* logo left, hamburger/nav right */
+  justify-content: space-between; 
   padding: 10px 20px;
   position: relative;
 }
 
-/* Logo styling */
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-/* Nav links (desktop) */
+
 .nav-links {
   display: flex;
   gap: 20px;
 }
 
-/* Hamburger icon (right corner) */
+
 .menu-btn {
-  display: none; /* hidden on desktop */
+  display: none; 
   cursor: pointer;
 }
 
-/* Responsive for mobile */
+
 @media (max-width: 768px) {
   .menu-btn {
-    display: block; /* show hamburger */
+    display: block; 
     position: absolute;
-    right: 20px;   /* right corner */
+    right: 20px;   
     top: 15px;
     z-index: 3;
   }
 
   .nav-links {
-    display: flex; /* hide nav links initially */
+    display: flex; 
     flex-direction: column;
     position: fixed;
     top: 0;
-    right: -250px;       /* slide in from right */
+    right: -250px;       
     height: 100%;
     width: 200px;
     background-color: #333;
@@ -132,9 +139,10 @@ header {
     background-color: #444;
   }
 
-  /* Show nav when hamburger is clicked */
+  
   #menu-toggle:checked ~ .nav-links {
     right: 0;
   }
 }
+
 
