@@ -63,16 +63,6 @@ footer { background-color:#2e2e2e; color:#ffffff; text-align:center; padding:20p
   .hero-photo { width:120px; height:120px; }
 }
 
-@media (max-width: 768px) {
-  .projects-container{
-    width: 90%;          
-    max-width: 300px;   
-    margin: 10px auto;   
-  }
-}
-
-
-
 #menu-toggle {
   display: none;
 }
@@ -144,6 +134,7 @@ header {
     right: 0;
   }
 }
+
 
 
 
