@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="img/png" href="icons8-image-100.png">
+
+
+  
+  </nav>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">🌿 My Portfolio</div>
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-btn">
+  <img src="hamburger.png" width="30" alt="Menu">
+</label>
+
+    <!-- Navigation links -->
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <img src="WhatsApp Image 2025-10-09 at 16.43.32.jpeg" width="250px" height="250px" alt="Your Photo" class="hero-photo">
+  <h1>Hello, I'm <span class="name">Abitha</span></h1>
+  <p>Full-Stack Developer | Java & Web Enthusiast | Crafting Responsive Web Apps</p>
+  <div class="hero-buttons">
+    <a href="ABITHA-RESUME2.pdf" class="btn resume-btn" target="_blank">Download Resume</a>
+    <a href="#projects" class="btn">View Projects</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>Hi! I’m a Full-Stack Developer passionate about creating responsive and user-friendly web applications. Skilled in Java, HTML, CSS, and MySQL, I build clean, modern interfaces and seamless experiences. I enjoy turning ideas into functional projects that showcase both creativity and technical expertise.</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+  <h2>My Skills</h2>
+  <div class="skills-container">
+    <div class="skill-box">HTML</div>
+    <div class="skill-box">CSS</div>
+    <div class="skill-box">Java</div>
+    <div class="skill-box">MySQL</div>
+    
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <h2>Projects</h2>
+  <div class="projects-container">
+    <div class="project-box">
+      <h3>E-Commerce Web Application</h3>
+      <p>An online store web application enabling users to browse products, add to cart, and complete purchases securely.</p>
+      <a href="project1.html" class="project-btn">View Project</a>
+    </div>
+    <div class="project-box">
+      <h3>Library management System</h3>
+      <p>A library management system to manage books, members, and borrowing transactions efficiently, with search and inventory tracking features.</p>
+      <a href="project2.html" class="project-btn">View Project</a>
+    </div>
+    <div class="project-box">
+      <h3>Tic Tac Toe Game</h3>
+      <p>A classic Tic-Tac-Toe game with a user-friendly interface, allowing two players to play interactively in the browser.</p>
+      <a href="project3.html" class="project-btn">View Project</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-container">
+    <div class="contact-card">
+      <div class="contact-name"></div>
+      <a href="https://www.linkedin.com/in/abitham" class="contact-link" target="_blank">LinkedIn</a>
+    </div>
+    <div class="contact-card">
+      <div class="contact-name"></div>
+      <a href="https://github.com/Abithaabi12" class="contact-link" target="_blank">GitHub</a>
+    </div>
+    <div class="contact-card">
+      <div class="contact-name"></div>
+      <a href="mailto:abithaabi4001@gmail.com" class="contact-link" target="_blank">Email</a>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const menuToggle = document.getElementById('menu-toggle');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menuToggle.checked = false; // uncheck checkbox
+    });
+  });
+</script>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 Your Name. All rights reserved.
+</footer>
+
+</body>
+</html>
